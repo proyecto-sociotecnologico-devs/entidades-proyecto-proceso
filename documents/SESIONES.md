@@ -1,49 +1,33 @@
-# Diario de Sesiones — U.E. Amelia Ríos
+# Día 11 - Viernes 16 oct
 
-## Día 1 (6 oct) — Login + Sesiones
-- Conexión PDO a amelia_rios.
-- Login con password_verify.
-- Sesiones PHP.
+## Logros
+- CRUD Representantes completo (app/representantes.php).
+- CRUD Inscripciones completo (app/inscripciones.php).
+- N:M representante ↔ estudiante funcional.
+- Inscripción de estudiantes en cursos funcional.
+- Rutas actualizadas en index.php.
+- Tarjetas nuevas en el dashboard.
 
-## Día 2 (7 oct) — RBAC
-- 4 roles cargados en sesión.
-- Funciones hasRole(), can(), requirePermission().
+## Pruebas realizadas
+- ✅ José Martínez creado como padre de Sofía.
+- ✅ Sofía Martínez inscrita en 2do Grado A.
+- ✅ Editar representante reconoce estudiantes asignados.
+- ✅ Retirar inscripción cambia estado a "Retirada".
 
-## Día 3 (8 oct) — Dashboard HTML por rol
-- Panel diferenciado para Admin, Docente, Representante, Estudiante.
+## Estado
+- Semana 2: COMPLETA.
+- MVP: 70%.
+- Backend completo del sistema académico.
 
-## Día 4 (9 oct) — CRUD Usuarios (crear + listar)
-- Listado con tabla HTML.
-- Formulario de creación.
-- Validaciones de duplicados.
+## Próxima semana (Semana 3)
+- Registrar asistencia diaria.
+- Consultar asistencia.
+- Justificaciones simplificadas.
+- Reportes básicos.
 
-## Día 5 (10 oct) — CRUD Usuarios (editar + eliminar + seguridad)
-- Editar usuario con reasignación de rol.
-- Soft delete (activo = 0).
-- Verificación global de sesión.
-
-## Día 6 (11 oct) — Pruebas RBAC
-- Probados los 4 roles.
-- Confirmado acceso denegado por URL.
-
-## Día 7 (12 oct) — Reconstrucción + separación modular
-- Restaurados archivos tras error con GitHub Desktop.
-- index.php separado en módulos (app/auth.php, app/usuarios.php).
-- Cambio de Intelephense a PHP IntelliSense.
-
-## Día 8 (13 oct) — CRUD Grados + Secciones
-- app/academico.php creado.
-- CRUD Grados y Secciones funcional.
-- Permisos academico.* asignados al Admin.
-
-## Día 9 (14 oct) — CRUD Materias + Cursos
-- CRUD Materias agregado.
-- CRUD Cursos agregado.
-- Validaciones referenciales (no eliminar con dependencias).
-
-## Día 10 (15 oct) — CRUD Estudiantes
-- app/estudiantes.php creado.
-- CRUD completo con transacciones.
-- Permisos estudiante.* y representante.* creados.
-- Tarjeta Estudiantes en el dashboard.
-- Creado Sofía Martínez como prueba.
+## Módulos pendientes
+- Eventos (Semana 4).
+- Encuestas (Semana 4).
+- Reportes visuales (Semana 4).
+- Bitácora visual (Semana 4).
+- Front-end pulido (Semana 4).
