@@ -1,0 +1,14 @@
+# Activar el motor de reescritura
+RewriteEngine On
+
+# Base de la reescritura
+RewriteBase /
+
+# Si el archivo solicitado NO existe como archivo físico...
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# ...y NO existe como directorio físico...
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# ...entonces redirige todo a index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
